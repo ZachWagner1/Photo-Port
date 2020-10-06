@@ -1,6 +1,10 @@
 import React from 'react';
 
-function Modal() {
+function handleClick() {
+
+}
+
+function Modal({currentPhoto, onClose}) {
 
     return (
         <div className="modalBackdrop">
@@ -10,7 +14,7 @@ function Modal() {
                 <p>
                     Photo Description
           </p>
-                <button type="button">
+                <button type="button" onClick={onClose}>
                     Close this modal
           </button>
             </div>
